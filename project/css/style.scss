@@ -1,0 +1,75 @@
+$theme-colors: (
+  "primary":    #0a58ca,
+  "secondary":  #a6acec,
+  "success":    #83e85a,
+  "info":       #00fff0,
+  "warning":    #ffd615,
+  "danger":     #e41749,
+  "light":      #fdfdfd,
+  "dark":       #3f3b3b
+);
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// custom css 
+.logo-site {
+  width: 150px;
+}
+
+.site-nav {
+  position: absolute;
+}
+.home {
+  background-image: url(../img/Bg-Shape.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right top;
+}
+
+.card {
+  border-radius: 2rem !important;
+  width: 20rem !important;
+  border: none !important;
+}
+.card:hover {
+  transition: 0.5s !important;
+  transform: scale(0.98) !important;
+}
+
+.pricing {
+  background-color: #a6acec15 !important;
+}
+.slick-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+  border: 2px solid #0a58ca;
+}
+.slick-dots li.slick-active {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 100%;
+  background-color: #0a58ca !important;
+}
+
+@media screen and (max-width: 576px) {
+  
+  .about-img,.about-text {
+    width: 100% !important;
+  }
+
+}
+@media screen and (max-width: 770px) {
+  .navbar-nav {
+    background-color: #3f3b3b !important;
+  }
+}
+
+
